@@ -20,7 +20,7 @@ if(ile > 0){
         perror("fork");
     }else if(pid == 0){
         srand(time(NULL)^getpid());
-        int n = 100+rand()%4900;
+        int n = 100+rand()%4901;
         printf("Dla n = %d wartość PI = %f\n", n, licz(n));
     }
     else{
